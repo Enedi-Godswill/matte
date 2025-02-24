@@ -7,13 +7,13 @@ function navbar(){
         <p>Matte</p>
         <ul class="nav-list">
             <li>
-                <a href="#">home</a>
+                <a href="#home">home</a>
             </li>
             <li>
-                <a href="#">about</a>
+                <a href="#about">about</a>
             </li>
             <li>
-                <a href="#">contact</a>
+                <a href="#contact">contact</a>
             </li>
         </ul>
         <button class="menu-btn">
