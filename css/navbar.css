@@ -1,0 +1,92 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    position: fixed;
+    z-index:9;
+    top:0;
+    left:0;
+    width:100%;
+    transition: .2s ease-in;
+}
+
+/* navbar javaScript Styling */
+.navbar.nav-border{
+    background:#fff;
+}
+
+.navbar.nav-border .nav-list{
+    background:#fff;
+}
+
+.navbar p{
+    font-size:2rem;
+    font-weight:bold;
+}
+.nav-list{
+    display:flex;
+    gap:5px;
+}
+.nav-list li a{
+    color:inherit;
+    font-size:20px;
+}
+
+/* menu btn */
+.menu-btn{
+    display:none;
+}
+
+@media screen and (max-width:800px){
+    .menu-btn{
+        display:flex;
+    }
+    .menu-btn img{
+        width:2rem;
+    }
+    /* menu buttons */
+    .menuBtn{
+        display:flex;
+    }
+    .closeBtn{
+        display:none;
+    }
+    /* menu buttons javaScript classes */
+    .menuBtn .show{
+        display:none;
+    }
+    .closeBtn .show{
+        display:flex;
+    }
+    /* menu button changes */
+    .menu-btn.active .menuBtn{
+        display:none;
+    }
+    .menu-btn.active .closeBtn{
+        display:flex;
+    }
+
+    /* nav list styles */
+    .nav-list{
+        position:absolute;
+        flex-direction:column;
+        top:3rem;
+        padding:10px;
+        background:#fff;
+        width:100%;
+    }
+    .nav-list li{
+        display:flex;
+        gap:1rem;
+    }
+    .nav-list li a{
+        font-size:2rem;
+    }
+    .nav-list{
+        display:none;
+    }
+    .nav-list.active{
+        display:flex;
+    }
+}
